@@ -1,1 +1,1 @@
-worker: python twitterBot_criptomoedas.py
+web: gunicorn site_interface:app
