@@ -29,10 +29,10 @@ def media_em_reais(siglamoeda):
 
 import tweepy
 
-consumer_key = 'kRAmwa1Gs4ILHeL8vWwmvAgUD'
-consumer_secret = 'BeArzFADJLzzhhqjwpvcPyIqBsby2bDdcMXIlk6sNaPyu4NvWJ'
-access_token = '949002549046235136-w10GiBBEOLJ2l7oMj82EGIHJvrGPKY5'
-access_token_secret = 'vledjq7AbsZsczuDWLdIPinElpaxQ39havMUVGhIS5r5U'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)
@@ -41,8 +41,8 @@ while True:
         
 #coleta API bitcoinaverage
 
-    secret_key = 'ODA4ZGY1ZGJkYWRiNDM2YzgxZjA2ZDExOTA4N2NmODM2ZmZlZjNhMmIxNGU0MWFjOThkOGY1OWJmOGE0ZmQxOQ'
-    public_key = 'OTM2MzZkZTUyMWQ3NGUzYTg5MDZiYmQ5YmU3NjM5MWQ'
+    secret_key = ''
+    public_key = ''
     timestamp = int(time.time())
     payload = '{}.{}'.format(timestamp, public_key)
     hex_hash = hmac.new(secret_key.encode(), msg=payload.encode(), digestmod=hashlib.sha256).hexdigest()
